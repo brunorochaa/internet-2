@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uso do Framework Bootstrap - framework para desenvolvedores WebFront-end - recursos css, js">
+    <meta name="keywords" content="Bootstrap, Framework, CSS, JS, Scripts">
+    <meta name="author" content="Bruno Rocha - brunorochaamaral@gmail.com">
+    <title>Uso do Framework Bootstrap - framework para desenvolvedores WebFront-end - recursos css, js</title>
+    <link rel="shortcut icon" href="img/icon-bootstrap.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:
+                $(this.hash).offset().top}, 900);
+            });
+        });
+    </script>
+    <style type="text/css">
+        #rodape {
+            clear: both;
+            background-color: #222222;
+            color: #698e9d;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            letter-spacing: 1px;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron text-center" style="margin-bottom: 0;" id="topo">
+        <h1>Site DESIGN</h1>
+    </header>
+    <nav class="navbar navbar-inverse" style="margin-bottom: 0; border-radius: 0;">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html" class="scroll">Home</a></li>
+            <li><a href="#empresa" class="scroll">Empresa</a></li>
+            <li><a href="#galeria" class="scroll">Galeria</a></li>
+            <li><a href="#contato" class="scroll">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="conteudo" class="container-fluid"  style="height: 650px;">
+        <div id="linha1" class="row" style="background-color: yellowgreen;">
+            <div id="coluna1" class="col-md-4 col-sm-6 col-xs-12">
+                <h2>Coluna</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni perferendis repudiandae omnis molestiae, sed consectetur explicabo aliquam laboriosam at dolores eos, odio hic atque ad cumque, quas nesciunt harum velit.</p>
+            </div>
+            <div id="coluna2" class="col-md-4 col-sm-6 col-xs-12">
+                <h2>Coluna</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni perferendis repudiandae omnis molestiae, sed consectetur explicabo aliquam laboriosam at dolores eos, odio hic atque ad cumque, quas nesciunt harum velit.</p>
+            </div>
+            <div id="coluna3" class="col-md-4 col-sm-12 col-xs-12">
+                <h2>Coluna</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni perferendis repudiandae omnis molestiae, sed consectetur explicabo aliquam laboriosam at dolores eos, odio hic atque ad cumque, quas nesciunt harum velit.</p>
+            </div>
+        </div>
+        <div id="linha2" class="row" style="background-color: gold;">
+            <div id="coluna21" class="col-md-6 col-xs-12" style="color: green;">
+                <h2>Coluna</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni perferendis repudiandae omnis molestiae, sed consectetur explicabo aliquam laboriosam at dolores eos, odio hic atque ad cumque, quas nesciunt harum velit.</p>
+            </div>
+            <div id="coluna22" class="col-md-3 col-xs-12">
+                <h2>Coluna</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni perferendis repudiandae omnis molestiae, sed consectetur explicabo aliquam laboriosam at dolores eos, odio hic atque ad cumque, quas nesciunt harum velit.</p>
+            </div>
+            <div id="coluna23" class="col-md-3 col-xs-12">
+                <h2>Coluna</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni perferendis repudiandae omnis molestiae, sed consectetur explicabo aliquam laboriosam at dolores eos, odio hic atque ad cumque, quas nesciunt harum velit.</p>
+            </div>
+        </div>
+    </section>
+    <section id="empresa" class="row container-fluid" style="height: 650px;">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <h1 class="text-center">Empresa</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+        </div>
+    </section>
+    <section id="galeria" class="row container-fluid" style="height: 650px;">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <h1 class="text-center">Galeria</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima magnam cupiditate labore ipsum quisquam eius dignissimos tempora corporis deleniti quae molestias in aut distinctio quod reiciendis delectus, ex ipsam?</p>
+        </div>
+    </section>
+    <section id="contato" class="row container-fluid" style="height: 600px;">
+        <h1 class="text-center">Contato</h1>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <form method="post" name="form" action="#">
+                <div class="form-group">
+                    <label>Nome:</label>
+                    <input type="text" name="nome" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>E-mail:</label>
+                    <input type="email" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea name="mensagem" cols="30" rows="6" class="form-control"></textarea>
+                </div>
+                <input type="submit" value="Enviar" class="btn btn-danger">
+                <input type="reset" value="Limpar" class="btn btn-default">
+            </form>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9105538361123!2d-51.15492908520224!3d-30.010724636668805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951977095b735899%3A0x27cd6ee10f7aed04!2sQI%20Faculdade%20%26%20Escola%20T%C3%A9cnica%20%7C%20Assis%20Brasil%20%7C%20Porto%20Alegre!5e0!3m2!1spt-BR!2sbr!4v1583152312235!5m2!1spt-BR!2sbr" width="645" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </section>
+    <div class="row">
+        <a href="#topo" class="botao-topo scroll"><img src="img/arrow.png" alt="Seta para cima"></a>
+    </div>
+    <footer id="rodape" class="navbar-fixed-bottom">
+        <span>Todos direitos &copy; reservados a Bruno Rocha</span>
+    </footer>
+</body>
+</html>

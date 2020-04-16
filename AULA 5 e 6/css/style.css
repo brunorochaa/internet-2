@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Arial, 'Times New Roman', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.geral {
+    border: 1px solid silver;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(95, 95, 95, .2);
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.topo {
+    height: 300px;
+    background-image: url(../img/header.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px 20px 0px 0px ;
+}
+
+.menu {
+    height: 45px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #6bacd3;
+    width: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0; /*retira margem interna*/
+    line-height: 1; /*colocamos uma linha de espaço*/
+}
+
+.menu ul li {
+    text-align: center;
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px; /*primeiro valor é a altura do nav -15 e o resto dividido por 2 (45-15)/2*/
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    text-shadow: 1px 1px 3px black;
+    letter-spacing: 1px;
+}
+
+.conteudo {
+    width: 100%;
+    height: auto; /*se definir altura ultilizar a barra de rolagem: overflow: auto;*/
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.colunas {
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -moz-column-rule: grey solid 1px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -webkit-column-rule: grey solid 1px;
+}
+
+.colunas p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+.colunas img {
+    width: 95%;
+    padding: 1px;
+}
+
+.conteudo h1 {
+    font-variant: small-caps;
+    text-shadow: 1px 1px 2px rgb(192, 192, 192);
+    padding: 20px;
+}
+
+.imagem-coluna {
+    margin: 0 auto;
+}
+
+.rodape {
+    width: 1024px; /*width: 100%;*/
+    height: 40px;
+    background-color: #6bacd3;
+    color: white;
+    border-radius: 0px 0px 20px 20px;
+    vertical-align: middle; /*line-height: 40px; gambiarra*/
+    display: table-cell;
+}

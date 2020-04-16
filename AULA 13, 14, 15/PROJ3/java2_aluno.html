@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	<title> Bootstrap - Framework para desenvolvedores Front-end </title>
+	<meta charset="utf-8">
+	<meta name="description" content="Framwork CSS e JS para design e layouts das páginas">
+	<meta name="keywords" content="Framework, CSS, JS, JQuery">
+	<meta name="author" content="Aline Zenker">	
+	<link rel="shortcut icon" href="img/icon.png">
+	<style type="text/css">		
+		input{
+			border-radius:3px;
+			padding:4px;
+			margin:5px;
+		}
+		.container{			
+			margin:30px;
+		}
+	</style>
+	<script type="text/javascript">
+		function validar() {
+			var nome = document.getElementById('nome').value;
+			var sexo = document.form1.sexo;
+			if (nome.length<2) {
+				document.getElementById('erro').innerHTML = 'Preencha o NOME corretamente.';
+				document.form1.txtnome.focus();
+				return false;
+			} else if (sexo[0].checked==false && sexo [1].checked==false) {
+				document.getElementById('erro').innerHTML = 'Selecione um sexo.';
+				return true;
+			} else {
+				return false;
+			}
+		}
+	</script>
+	</head>
+	<body>	
+	<div class="container">
+		<form method="post" name="form1" action="http://www.qi.edu.br" onSubmit="return validar();">
+			<label> Nome: </label> 
+			<input type="text" name="txtnome" size="15" id="nome">
+			<br>
+			<label> Sexo: </label><br> 
+			<input name="sexo" type="radio" value="masculino" id="sexo"> Masculino<br> 
+            <input name="sexo" type="radio" value="feminino" id="sexo"> Feminino
+			<br>
+			<input type="submit"  value="Enviar">
+			<br>
+			<p id="erro" style="color:red;font-size:14px"></p>			
+		</form>
+	</div>
+	</body>
+</html>

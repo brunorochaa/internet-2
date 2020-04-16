@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-color: rgb(19, 19, 36);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.geral {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.topo {
+    width: 900px;
+    height: 200px;
+    background-image: url(../img/header.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+}
+
+.esquerdo, .direito {
+    width: 230px;
+    padding: 5px;
+    float: left;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.centro {
+    width: 390px;
+    padding: 5px;
+    margin: 0 10px;
+    float: left;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.imagem-centro img {
+    width: 390px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5;
+    font-size: 12pt;
+    text-shadow: 1px 1px 1px black;
+}

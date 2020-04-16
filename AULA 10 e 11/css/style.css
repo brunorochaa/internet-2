@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    background-color: purple;
+    color: orange;
+}
+
+p {
+    text-align: justify;
+    text-indent: 1.5625em;
+}
+
+.verde {
+    background-color: green;
+}
+
+.navbar-inverse {
+    background-color: chartreuse;
+}

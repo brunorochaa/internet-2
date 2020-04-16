@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+*{
+    font-family: 'Odibee Sans', cursive;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.menu {
+    background-color: rgb(230, 230, 230);
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1;
+    float: right;
+}
+
+.menu ul li {
+    text-align: center;
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+    padding: 15px 25px;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    border-top: 1px solid red;
+    color: red;
+    letter-spacing: 1px;
+}
+
+.topo {
+    height: 350px;
+    background-image: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.conteudo {
+    padding: 25px 25px 0 25px;
+    width: 100%;
+    height: auto;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.conteudo h1 {
+    font-variant: small-caps;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30pt;
+    text-align: center;
+    color: rgb(29, 29, 29);
+}
+
+.conteudo p {
+    color: rgb(29, 29, 29);
+    padding: 5px;
+    font-size: 20pt;
+}
+
+.primeiro-paragrafo {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 5px;
+    font-size: 20pt;
+}
+
+.imagem {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.rodape {
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(29, 29, 29);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aulas de Internet II - apostila revisando HTML e CSS, principais tags, atributos e elementos, seletores, atributos e valores">
+    <meta name="keywords" content="Internet, HTML, CSS, JS, Bootstrap">
+    <meta name="author" content="Bruno Rocha - brunorochaamaral@gmail.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Internet II - Retomada de conteúdo de Internet I - HTML, CSS.</title>
+    <link rel="shortcut icon" href="img/html-icon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="geral">
+        <h1 class="principal">Formulários</h1>
+        <hr>
+        <form action="post" name="dados" action="#">
+            <fieldset class="maior">
+                <fieldset class="menor">
+                    <legend>Dados Pessoais</legend>
+                    <label>Nome:</label>
+                    <input type="text" name="nomePessoa" required="required" size="30"><br>
+                    <label>Data de Nascimento:</label>
+                    <input type="date" name="dataNascimento" required="required"><br>
+                    <label>Endereço:</label>
+                    <input type="text" name="endereco" required="required" size="30">&nbsp;&nbsp;&nbsp;
+                    <label>Nº:</label>
+                    <input type="text" name="numero" required size="30"><br>
+                    <label>Cidade:</label>
+                    <input type="text" name="cidade" required="required" size="20">&nbsp;&nbsp;&nbsp;
+                    <label>Estado:</label>
+                    <select name="estados">
+                        <option value="vazio">Vazio</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select><br>
+                    <label>E-mail:</label>
+                    <input type="email" name="email" required="required" size="50">&nbsp;&nbsp;&nbsp;
+                    <label>Senha</label>
+                    <input type="password" name="senha" required="required" size="8" maxlength="8"><br>
+                    <label>Sexo:</label>
+                    <input type="radio" name="sexo" value="Feminino">Feminino
+                    <input type="radio" name="sexo" value="Masculino">Masculino
+                    <input type="radio" name="sexo" value="Outros">Outros<br>
+                    <label>Bens Pessoais:</label><br>
+                    <input type="checkbox" name="bens" value="casa">Casa<br>
+                    <input type="checkbox" name="bens" value="carro">Carro<br>
+                    <input type="checkbox" name="bens" value="moto">Moto<br>
+                    <input type="checkbox" name="bens" value="patinete">Patinete<br>
+                </fieldset>
+                <fieldset class="menor">
+                    <legend>Dados Acadêmicos</legend>
+                    <label>Escolaridade:</label>
+                    <select name="escola">
+                        <option value="incompleto">Incompleto</option>
+                        <option value="fundamental">Fundamental</option>
+                        <option value="medio">Médio</option>
+                        <option value="tecnico">Técnico</option>
+                        <option value="superior">Fundamental</option>
+                    </select><br>
+                    <label>Cursos:</label><br>
+                    <textarea name="cursos" cols="20" rows="5" placeholder="Digite aqui..."></textarea>
+                </fieldset>
+                <fieldset class="menor">
+                    <legend>Dados Profissionais</legend>
+                    <label>Experiências Profissionais:</label><br>
+                    <textarea name="experiencias" cols="20" rows="5" placeholder="Digite aqui..."></textarea><br>
+                    <label>Currículo:</label>
+                    <input type="file" name="curriculo">
+                </fieldset>
+                <input type="submit" name="envia" value="Enviar">
+                <input type="submit" name="reset" value="Limpar">
+            </fieldset>
+        </form>
+        <p><a href="index.html">Voltar</a></p>
+    </div>
+</body>
+</html>

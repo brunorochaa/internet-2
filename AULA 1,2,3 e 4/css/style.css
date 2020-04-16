@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');/*Fonte Título*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); /*Fonte Paragráfo*/
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    margin: 0px;
+}
+
+.principal {
+    color: black;
+    text-shadow: 2px 2px 2px rgba(94, 94, 94, 0.2);
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+ul, li, a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none; /*Retirar sublinhado do link*/
+    color: black;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #363636;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(94, 94, 94, 0.2);
+    letter-spacing: 0.2px;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.geral {
+    color: black;
+    margin: 5px 35px 5px 35px;
+}
+
+.arial {
+    font-family: Arial;
+}
+
+.verdana {
+    font-family: Verdana;
+}
+
+.tam10pt {
+    font-size: 10pt;
+}
+
+.tam10px {
+    font-size: 10px;
+}
+
+.tam1em {
+    font-size: 1em;
+}
+
+.vermelho {
+    color: red;
+}
+
+.azul {
+    color: blue;
+}
+
+.versalete {
+    font-variant: small-caps;
+}
+
+.maiusculo {
+    text-transform: uppercase;
+}
+
+.minusculo {
+    text-transform: lowercase;
+}
+
+.esquerdo {
+    text-align: left;
+}
+
+.direito {
+    text-align: right;
+}
+
+.centro {
+    text-align: center;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.especial {
+    text-indent: 30px; /*Identação de texto*/
+    line-height: 2; /*Espaço entre linhas*/
+    text-shadow: 1px 1px 2px rgba(95, 95, 95, 0.5);
+    font-style: italic;
+    margin: 15px; /*Margem externa*/
+    border: 2px dotted red;
+    color: red; /*Cor da fonte*/
+    background: pink; /*Cor de fundo*/
+    padding: 10px; /*Espaço interno*/
+}
+
+.esquerdo, .justificado {
+    text-indent: 25px;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+.imagem {
+    width: 250px;
+    float: left;
+    padding: 10px; /*margem interna*/
+}
+
+/*Formatando a página fundo.html
+.fundo {
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+*/
+
+.trabalho1 {
+    text-align: right;
+}
+
+/**Formatando a página listas.html*/
+.lista1 {
+    list-style-type: square; /*disc, circle, square, none(menu)*/
+    /*list-style-image: url();*/
+}
+
+.lista2 {
+    list-style-type: upper-alpha; /*upper-roman, upper-alpha*/
+    color: black;
+}
+
+.menu {
+    list-style-type: none; /*Retirar marcador*/
+    display: inline-block;
+}
+
+.menu li { /*Formatando cada item do meu menu*/
+    display: inline;
+    padding: 10px;
+}
+
+/*.menu li a:link {
+    background-color: black;
+    color: white;
+}*/
+
+/*Formatando a página tabelas.html*/
+.table, tr, td, th {
+    border: 1px solid black;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 4px groove silver;
+    background-color: white;
+}
+
+.maior {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgba(139, 139, 139, 0.1);
+}
+
+.menor {
+    border-radius: 20px;
+}
+
+input, select, textarea {
+    margin: 5px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color :rgba(139, 139, 139, 0.1);
+}
+
+input:hover, select:hover, textarea:hover {
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px silver;
+}

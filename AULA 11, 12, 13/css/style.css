@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+
+.botao-topo{
+    position: fixed;
+    bottom: 45px;
+    right: 4px;
+    display: scroll;
+}

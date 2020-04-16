@@ -1,0 +1,52 @@
+/*MENU*/
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+/*FORMATAÇÃO MENU*/
+#cssmenu ul {
+  margin: 4px auto;
+  padding: 0;
+  list-style-type: none;
+  width: auto;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  background: #D3D3D3;
+  font-family: Arial;
+  border-bottom: 0 solid #353535;
+  zoom: 1;
+  
+}
+#cssmenu ul:before {
+  content: '';
+  display: block;
+}
+#cssmenu ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu li {
+  display: block;
+  float: center;
+  margin: 0;
+  padding: 0 4px;
+}
+#cssmenu li a {
+  display: block;
+  float: left;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px 7px 20px;
+  border-bottom: 3px solid transparent;
+}
+#cssmenu li a:hover {
+  color: ligth blue;
+  border-bottom: 3px solid #00b8fd;
+}
+#cssmenu li.active a {
+  display: inline;
+  border-bottom: 3px solid #00b8fd;
+  float: left;
+  margin: 0 auto;
+}

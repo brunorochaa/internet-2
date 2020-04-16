@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	<title> Bootstrap - Framework para desenvolvedores Front-end </title>
+	<meta charset="utf-8">
+	<meta name="description" content="Framwork CSS e JS para design e layouts das páginas">
+	<meta name="keywords" content="Framework, CSS, JS, JQuery">
+	<meta name="author" content="Aline Zenker">	
+	<link rel="shortcut icon" href="img/icon.png">
+	<style type="text/css">		
+		input{
+			border-radius:3px;
+			padding:4px;
+			margin:5px;
+		}
+		.container{			
+			margin:30px;
+		}
+	</style>
+	</head>
+	<body>	
+		<form method="post" name="form1" action="">
+			<label> Nome: </label> 
+			<input type="text" name="txtnome" size="15" id="nome">
+			<br>
+			<label> Sobrenome: </label> 
+			<input type="text" name="txtsobrenome" size="15" id="sobrenome">
+			<br>
+			<input type="button" name="b1" value="Gerar User" onClick="newUser()">
+			<br>
+			<strong>Seu usuário é: </strong>
+			<p id="user"> Gerando user... </p>
+		</form>
+		
+	</body>
+</html>

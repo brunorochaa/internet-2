@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	<title> Bootstrap - Framework para desenvolvedores Front-end </title>
+	<meta charset="utf-8">
+	<meta name="description" content="Framwork CSS e JS para design e layouts das páginas">
+	<meta name="keywords" content="Framework, CSS, JS, JQuery">
+	<meta name="author" content="Aline Zenker">	
+	<link rel="shortcut icon" href="img/icon.png">
+
+	<style type="text/css">
+		#erro {
+			color: red;
+			font-weight: bold;
+		}
+		input{
+			border-radius:3px;
+			padding:4px;
+			margin:5px;
+		}
+		.container{			
+			margin:30px;
+		}
+	</style>
+	<script type="text/javascript">
+		function verifica() {
+			var form = document.getElementById('form1');
+			var nome = document.getElementById('txtnome').value;
+			var cargo = document.getElementById('txtcargo').value;
+			var erro = document.getElementById('erro');
+			var msg_erro;
+
+			if(nome.length<2)
+				msg_erro = "Campo NOME incorreto";
+			else if (cargo.length<2)
+				msg_erro = "Campo CARGO incorreto";
+			else
+				msg_erro = '';
+
+			if(msg_erro == '')
+				form.submit();
+			else
+				erro.innerHTML = msg_erro;
+		}
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<form action="http://www.qi.edu.br" method="post"  id="form1">
+			
+			<label>Nome:</label><input type="text" id="txtnome" name="txtnome"><br>
+			<label>Cargo:</label> <input type="text" id="txtcargo" name="txtcargo"><br>
+			<input type="Button" value="Enviar" onclick="verifica()">
+		</form>
+		<div id="erro"></div>
+	</div>
+
+</body>
+</html>

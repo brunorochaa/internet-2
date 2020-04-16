@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uso do Framework Bootstrap - framework para desenvolvedores WebFront-end - recursos css, js">
+    <meta name="keywords" content="JavaScript, JS, HTML, Java, Scripts">
+    <meta name="author" content="Bruno Rocha - brunorochaamaral@gmail.com">
+    <title>Uso de JavaScript - framework para desenvolvedores WebFront-end - recursos css, js</title>
+    <link rel="shortcut icon" href="img/icon-js.png">
+    <script type="text/javascript">
+        //01
+        //window.alert("Olá Mundo!");
+        //02
+        window.document.write("Oi!");
+        //03
+        var nome = "Bruno";
+        var idade = 19;
+        var peso = 80.0;
+        document.write("<h3>Seu nome <ins>"+nome+"</ins>,sua idade <ins>"+idade+"</ins>,seu peso <ins>"+peso+"</ins></h3>");
+        //p&b
+        function peb(){
+            document.bgColor='white';
+            document.fgColor='black';
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplos JavaScript</h1>
+    <br>
+    <h2>Botão Fechar Janela</h2>
+    <input type="button" name="fecha" value="Fecha Janela" onClick="window.close()">
+    <hr>
+    <h2>Botão Imprimir</h2>
+    <input type="button" name="imprime" value="Imprimir" onClick="window.print()">
+    <hr>
+    <h2>Botão Alerta</h2>
+    <input type="button" name="alerta" value="Alerta" onClick="window.alert('oi')">
+    <hr>
+    <h2>Botão Abrir URL</h2>
+    <input type="button" name="url" value="Google" onClick="window.open('https://www.google.com/')">
+    <hr>
+    <h2>Botão Confirma</h2>
+    <input type="button" name="confirma" value="Continuar" onClick="window.confirm('Deseja cotinuar?')">
+    <hr>
+    <h2>Botão Fundo</h2>
+    <input type="button" name="fundo" value="Cor Fundo"  onClick="document.bgColor='purple'">
+    <hr>
+    <h2>Botão Cor Texto</h2>
+    <input type="button" name="texto" value="Cor Texto" onClick="document.fgColor='navy'">
+    <hr>
+    <h2>Botão Preto e Branco</h2>
+    <input type="button" name="peb" value="Preto e Branco" onClick="peb()">
+    <hr>
+</body>
+</html>

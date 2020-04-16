@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-color: rgb(19, 19, 36);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.geral {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.topo {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/header.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+}
+
+/*Medida de cada container: 25+.6+.6=26.2=52.4*/
+.esquerdo, .direito {
+    width: 25%;
+    padding: .6%;
+    float: left;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+/*Medidas: 44+.6+.6+1.2+1.2=47.6+52.4=100%*/
+.centro {
+    width: 44%;
+    padding: .6%;
+    margin: 0 1.2%;
+    float: left;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.imagem-centro img {
+    width: 100%;
+    /*setando medida para responsivo*/
+    max-width: 100%;
+    min-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: .6%;
+    text-shadow: 1px 1px 1px black;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5;
+    font-size: 12pt;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*Media querye para tablet paisagem:*/
+@media screen and (max-width: 900px) {
+    .geral {
+        width: 100%;
+    }
+
+    .esquerdo, .centro {
+        width: 46.4%;
+        padding: .6;
+        margin: 0 1.2%;
+        float: left;
+    }
+
+    .direito {
+        padding: .6%;
+        width: 98.8%;
+        clear: both;
+    }
+}
+
+/*Media querye para tablet retrato*/
+@media screen and (max-width: 600px) {
+    .geral {
+        width: 100%;
+    }
+
+    .esquerdo, .centro, .direito {
+        padding: 6%;
+        width: 98.8%;
+        float: none;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/*Media querye para celulares diversos*/
+@media screen and (max-width: 400px) {
+    .esquerdo, .centro {
+        padding: 6%;
+        width: 98.8%;
+        float: none;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .direito {
+        display: none;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+}

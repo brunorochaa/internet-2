@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uso do Framework Bootstrap - framework para desenvolvedores WebFront-end - recursos css, js">
+    <meta name="keywords" content="Bootstrap, Framework, CSS, JS, Scripts">
+    <meta name="author" content="Bruno Rocha - brunorochaamaral@gmail.com">
+    <title>Uso do Framework Bootstrap - framework para desenvolvedores WebFront-end - recursos css, js</title>
+    <link rel="shortcut icon" href="img/#">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <div class="geral">
+        <h1 class="jumbotron text-center verde">Trabalhando com o Bootstrap</h1>
+        <hr>
+        <p>O <strong>Bootstrap</strong> é um framework front-end dotado de diversos recursos CSS, JS e JQuery. O mesmo possui arquivos minificados para compactar o site. Para fazer seu uso, basta incorporar suas pastas padrões, ou simplesmente utilizar os links CDNS disponiveis no site oficial: http:getboostrap.com</p>
+        <h2>Exemplos de Botões Bootstrap:</h2>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primário</button>
+        <button type="button" class="btn btn-success">Sucesso</button>
+        <button type="button" class="btn btn-danger">Perigo</button>
+        <button type="button" class="btn btn-warning">Aviso</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <!--<button type="button" class="btn btn-light">Light</button>-->
+        <!--<button type="button" class="btn btn-dark">Dark</button>-->
+        <button type="button" class="btn btn-link">Link</button>
+        <h2>Botões Agrupados:</h2>
+        <div class="btn btn-group">
+            <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-home"> Home</span></button>
+            <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-phone"> Empresa</span></button>
+            <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-picture"> Galeria</span></button>
+            <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-earphone"> Contato</span></button>
+            <!--<button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-thumbs-up"> MauricioDev</span></button>-->
+        </div>
+        <h2>Botões Agrupados na Vertical:</h2>
+        <div class="btn btn-group-vertical">
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-home"> Home</span></button>
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-phone"> Empresa</span></button>
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-picture"> Galeria</span></button>
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-earphone"> Contato</span></button>
+        </div>
+        <h2>Exemplo Menu:</h2>
+        <nav style="margin-bottom: 70px;">
+            <ul class="nav navbar-nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <h2>Exemplo barra de navegação:</h2>
+        <nav class="navbar navbar-inverse container-fluid navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <h2>Imagem Responsiva:</h2>
+        <figure class="media">
+            <img src="img/dale.jpg" alt="Dalessandro correndo para o escanteio olhando para a area" style="width: 400px;" class="img-responsive">
+        </figure>
+        <h2>Imagem Responsiva e Arrendondada:</h2>
+        <figure class="media">
+            <img src="img/dale.jpg" alt="Dalessandro correndo para o escanteio olhando para a area" style="width: 400px;" class="img-responsive img-circle">
+        </figure>
+        <h2>Imagem com Borda:</h2>
+        <figure class="media">
+            <img src="img/dale.jpg" alt="Dalessandro correndo para o escanteio olhando para a area" style="width: 400px;" class="img-responsive img-thumbnail">
+        </figure>
+    </div>
+</body>
+</html>
